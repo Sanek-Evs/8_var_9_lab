@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="js/css/Steel.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div align="center">
+    <form>
+        <h2>Добавить книгу</h2>
+        <p>
+            <input placeholder="Введите название книги" type="text" name="" id="name">
+        </p>
+        <p>
+            <input placeholder="Введите год" type="text" name="" id="year">
+        </p>
+        <p>
+            <input placeholder="Введите Автора" type="text" name="" id="author">
+        </p>
+        <button class = "click" type="button" onclick="addBook()">Сохранить</button>
+    </form>
+</div>
+<br>
+<div align="center">
+    <table id="book_1" align="center"></table>
+    <p></p>
+    <button class = "click" type="button" align="center" onclick="showBook()">Все книги</button>
+    <p></p>
+</div>
+
+
+<div align="center">
+    <form>
+        <h3>Обновить информацию о книге</h3>
+        <p>
+            <input placeholder="Введите id книги" type="text" name="" id="up_id">
+        </p>
+        <p>
+            <input placeholder="Введите название книги" type="text" name="" id="up_book">
+        </p>
+        <p>
+            <input placeholder="Введите год издания книги" type="text" name="" id="up_year">
+        </p>
+        <p>
+            <input placeholder="Введите автора" type="text" name="" id="up_author">
+        </p>
+        <button class = "click" type="button" onclick="updateBook()">Сохранить</button>
+    </form>
+</div>
+
+<div align="center">
+    <form>
+        <h2>Удалить книгу</h2>
+        <p>
+            <input placeholder="Введите ID Книги из списка" type="text" name="" id="id">
+        </p>
+        <button class = "click" type="button" onclick="deleteBook()">Удалить</button>
+    </form>
+</div>
+
+<div align="center">
+    <form>
+        <h2>Рейтинг автора:</h2>
+        <h3 id="reit"></h3>
+        <table id="list_books"></table>
+        <p>
+            <input placeholder="Введите Автора" type="text" name="" id="reit_author">
+        </p>
+        <button class = "click" type="button" onclick="ratingAuthor()">Показать</button>
+    </form>
+</div>
+
+</body>
+<script type="text/javascript" src="js/index.js" ></script>
+</html>
+
+
